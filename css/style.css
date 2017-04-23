@@ -145,6 +145,35 @@ body {
   float: right;
 }
 
+.catalog-filters {
+  float: left;
+  width: 220px;
+}
+
+.catalog-items {
+  float: right;
+  width: 700px;
+}
+
+.products {
+  font-size: 0;
+  margin-left: -20px;
+}
+
+.product {
+  display: inline-block;
+  font-size: 14px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  min-height: 286px;
+  vertical-align: top;
+  width: 220px;
+}
+
+.products + .pagination {
+  margin-top: 25px;
+}
+
 .main-footer {
   margin-top: 65px;
   padding-bottom: 40px;
