@@ -2,6 +2,21 @@
 
 @charset "UTF-8";
 
+/* Apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html, body {
+  margin: 0;
+  min-width: 1122px;
+  padding: 0;
+}
+
 body {
   color: #fff;
   font-family: "PT Sans Narrow", Arial, sans-serif;
@@ -9,6 +24,22 @@ body {
   font-weight: 700;
   line-height: 1.71428571;
   text-transform: uppercase;
+}
+
+.inner-page {
+  color: #000;
+}
+
+.clearfix::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 10px;
+  width: 960px;
 }
 
 .first-heading {
@@ -21,6 +52,170 @@ body {
   line-height: 1.25;
 }
 
-.inner-page {
-  color: #000;
+.main-header {
+  margin-bottom: 60px;
+}
+
+.inner-page .main-header {
+  margin-bottom: 55px;
+}
+
+.main-navigation {
+  float: left;
+  min-height: 70px;
+  width: 780px;
+}
+
+.user-block {
+  float: right;
+  min-height: 70px;
+  width: 140px;
+}
+
+.index-logo {
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 25px;
+  min-height: 204px;
+  width: 368px;
+}
+
+.features {
+  margin-bottom: 80px;
+}
+
+.features-item {
+  float: left;
+  margin-right: 20px;
+  min-height: 175px;
+  width: 300px;
+}
+
+.features-item:last-child {
+  margin-right: 0;
+}
+
+.index-content {
+  margin-bottom: 35px;
+  padding: 50px 80px;
+}
+
+.index-content-left {
+  float: left;
+  min-height: 330px;
+  width: 380px;
+}
+
+.index-content-right {
+  float: right;
+  min-height: 330px;
+  width: 300px;
+}
+
+.inner-page .main-heading {
+  margin-bottom: 20px;
+}
+
+.breadcrumbs {
+  margin-bottom: 55px;
+}
+
+.big-heading {
+  margin-bottom: 65px;
+}
+
+.inner-content {
+  margin-bottom: 75px;
+}
+
+.inner-content-colums + .inner-content-columns {
+  margin-top: 60px;
+}
+
+.inner-content-column-left,
+.inner-content-column-right {
+  width: 460px;
+}
+
+.inner-content-column-left {
+  float: left;
+}
+
+.inner-content-column-right {
+  float: right;
+}
+
+.catalog-filters {
+  float: left;
+  width: 220px;
+}
+
+.catalog-items {
+  float: right;
+  width: 700px;
+}
+
+.products {
+  font-size: 0;
+  margin-left: -20px;
+}
+
+.product {
+  display: inline-block;
+  font-size: 14px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  min-height: 286px;
+  vertical-align: top;
+  width: 220px;
+}
+
+.products + .pagination {
+  margin-top: 25px;
+}
+
+.product-showcase .large-image {
+  height: 498px;
+  margin-bottom: 20px;
+  width: 460px;
+}
+
+.product-showcase .small-image {
+  height: 149px;
+  float: left;
+  margin-right: 20px;
+  width: 140px;
+}
+
+.product-showcase .small-image:last-child {
+  margin-right: 0;
+}
+
+.product-info {
+  padding-left: 70px;
+}
+
+.main-footer {
+  margin-top: 65px;
+  padding-bottom: 40px;
+  padding-top: 60px;
+}
+
+.footer-contacts {
+  float: left;
+  min-height: 90px;
+  margin-right: 60px;
+  width: 320px;
+}
+
+.footer-social {
+  float: left;
+  min-height: 90px;
+  width: 180px;
+}
+
+.footer-copyright {
+  float: right;
+  min-height: 90px;
+  width: 180px;
 }
