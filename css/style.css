@@ -2,6 +2,22 @@
 
 @charset "UTF-8";
 
+@font-face {
+  font-family: "PT Sans Narrow";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsansnarrow.woff2") format("woff2"),
+       url("../fonts/ptsansnarrow.woff") format("woff");
+}
+
+@font-face {
+  font-family: "PT Sans Narrow";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsansnarrowbold.woff2") format("woff2"),
+       url("../fonts/ptsansnarrowbold.woff") format("woff");
+}
+
 /* Apply a natural box layout model to all elements, but allowing components to change */
 html {
   box-sizing: border-box;
