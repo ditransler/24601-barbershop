@@ -171,6 +171,58 @@ body {
   background-color: #000;
 }
 
+input[type="checkbox"],
+input[type="radio"] {
+  display: none;
+}
+
+input[type="checkbox"] + label,
+input[type="radio"] + label {
+  cursor: pointer;
+  display: inline-block;
+  line-height: 1.28571429;
+  padding-left: 43px;
+  position: relative;
+  vertical-align: middle;
+}
+
+input[type="checkbox"] + label::before,
+input[type="radio"] + label::before {
+  border: 2px solid #000;
+  content: "";
+  display: inline-block;
+  height: 20px;
+  margin-left: -43px;
+  margin-right: 23px;
+  vertical-align: top;
+  width: 20px;
+}
+
+input[type="radio"] + label::before {
+  border-radius: 50%;
+}
+
+input[type="checkbox"]:checked + label::after {
+  background: transparent url("../img/sprite.png") -5px -5px no-repeat;
+  content: "";
+  height: 12px;
+  left: 4px;
+  position: absolute;
+  top: 4px;
+  width: 12px;
+}
+
+input[type="radio"]:checked + label::after {
+  background: #000;
+  border-radius: 50%;
+  content: "";
+  height: 8px;
+  left: 6px;
+  position: absolute;
+  top: 6px;
+  width: 8px;
+}
+
 .breadcrumbs {
   margin-bottom: 55px;
 }
@@ -737,6 +789,30 @@ body {
   width: 220px;
 }
 
+.catalog-filters fieldset {
+  border: none;
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
+}
+
+.catalog-filters legend {
+  font-size: 24px;
+  line-height: 1.25;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+
+.catalog-filters ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-filters li:not(:last-child) {
+  margin-bottom: 17px;
+}
+
 .catalog-items {
   float: right;
   width: 700px;
@@ -748,6 +824,8 @@ body {
 }
 
 .product {
+  background-color: #fff;
+  box-shadow: 0 0 15px 0 rgba(0, 1, 1, 0.2);
   display: inline-block;
   font-size: 14px;
   margin-left: 20px;
@@ -757,8 +835,94 @@ body {
   width: 220px;
 }
 
+.product-thumb {
+  display: block;
+  height: 165px;
+  margin-bottom: 16px;
+  overflow: hidden;
+  width: 220px;
+}
+
+.product-thumb img {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.product-title {
+  font-size: 14px;
+  line-height: 1.28571429;
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0 16px;
+}
+
+.product-title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.product-title .type {
+  display: block;
+  text-transform: none;
+}
+
+.product-price {
+  font-size: 0;
+  padding: 0 16px;
+  text-align: center;
+}
+
+.product-price .value {
+  background-color: #e5e5e5;
+  display: inline-block;
+  font-size: 14px;
+  line-height: 43px;
+  min-width: 109px;
+  padding: 0 26px;
+  vertical-align: top;
+}
+
+.product-price .btn {
+  line-height: 43px;
+  margin-right: 0;
+  min-width: 78px;
+  padding: 0 18px;
+}
+
+.pagination {
+  font-size: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 .products + .pagination {
   margin-top: 25px;
+}
+
+.pagination li {
+  background-color: #fff;
+  display: inline-block;
+  color: #000;
+  height: 43px;
+  font-size: 14px;
+  line-height: 43px;
+  margin-right: 7px;
+  text-align: center;
+  vertical-align: top;
+  width: 43px;
+}
+
+.pagination a {
+  background-color: #000;
+  color: #fff;
+  display: block;
+  text-decoration: none;
+}
+
+.pagination a:hover {
+  background-color: #663d15;
 }
 
 /* ==========================================================================
