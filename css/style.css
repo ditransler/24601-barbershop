@@ -742,19 +742,26 @@ input[type="radio"]:checked + label::after {
   padding: 10px 15px;
 }
 
-.custom-list-1 {
+.custom-list {
   list-style: none;
   margin: 14px 0;
   padding: 0;
 }
 
-.custom-list-1 li {
-  margin-bottom: 15px;
+.custom-list li {
   padding-left: 20px;
   position: relative;
 }
 
-.custom-list-1 li::before {
+.custome-list-1 li {
+  margin-bottom: 15px;
+}
+
+.custome-list-2 li {
+  margin-bottom: 2px;
+}
+
+.custom-list li::before {
   background: #000;
   content: "";
   height: 8px;
@@ -869,8 +876,10 @@ input[type="radio"]:checked + label::after {
 
 .product-price {
   font-size: 0;
+}
+
+.product .product-price {
   padding: 0 16px;
-  text-align: center;
 }
 
 .product-price .value {
@@ -880,6 +889,7 @@ input[type="radio"]:checked + label::after {
   line-height: 43px;
   min-width: 109px;
   padding: 0 26px;
+  text-align: center;
   vertical-align: top;
 }
 
@@ -929,12 +939,14 @@ input[type="radio"]:checked + label::after {
    Item page
    ========================================================================== */
 .product-showcase .large-image {
+  box-shadow: 0 0 15px 0 rgba(0, 1, 1, 0.2);
   height: 498px;
   margin-bottom: 20px;
   width: 460px;
 }
 
 .product-showcase .small-image {
+  box-shadow: 0 0 15px 0 rgba(0, 1, 1, 0.2);
   height: 149px;
   float: left;
   margin-right: 20px;
@@ -947,4 +959,30 @@ input[type="radio"]:checked + label::after {
 
 .product-info {
   padding-left: 70px;
+}
+
+.product-extra {
+  margin-bottom: 40px;
+}
+
+.product-extra .product-availability,
+.product-extra .product-article {
+  margin: 0;
+}
+
+.product-availability {
+  float: left;
+}
+
+.product-article {
+  color: #aeaeae;
+  float: right;
+}
+
+.product-description {
+  margin-bottom: 40px;
+}
+
+.product-info .product-price {
+  margin-bottom: 65px;
 }
