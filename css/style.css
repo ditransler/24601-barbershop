@@ -1,6 +1,6 @@
-/*! The main stylesheet for the Barbershop project */
-
 @charset "UTF-8";
+
+/*! The main stylesheet for the Barbershop project */
 
 @font-face {
   font-family: "PT Sans Narrow";
@@ -240,7 +240,7 @@ input[type="radio"]:checked + label::after {
   position: relative;
 }
 
-.breadcrumbs li:after {
+.breadcrumbs li::after {
   background: #000;
   content: "";
   height: 8px;
@@ -277,12 +277,8 @@ input[type="radio"]:checked + label::after {
   margin-bottom: 55px;
 }
 
-.inner-logo {
-  height: 24px;
-  width: 130px;
-}
-
 .inner-logo img {
+  display: block;
   height: 24px;
   width: 111px;
 }
@@ -296,9 +292,8 @@ input[type="radio"]:checked + label::after {
 
 .main-navigation .inner-logo {
   display: inline-block;
-  padding: 0;
-  padding-left: 10px;
-  padding-right: 19px;
+  padding-bottom: 23px;
+  padding-top: 23px;
   vertical-align: middle;
 }
 
@@ -322,15 +317,33 @@ input[type="radio"]:checked + label::after {
   vertical-align: top;
 }
 
+.main-navigation li:hover {
+  background-color: #242424;
+}
+
+.main-navigation .is-active:hover {
+  background: none;
+}
+
+.main-navigation .is-active {
+  position: relative;
+}
+
+.main-navigation .is-active::after {
+  background-color: #fff;
+  bottom: 0;
+  content: "";
+  height: 5px;
+  left: 20px;
+  position: absolute;
+  right: 20px;
+}
+
 .main-navigation a {
   color: #fff;
   display: block;
   padding: 25px 20px;
   text-decoration: none;
-}
-
-.main-navigation a:hover {
-  background: #242424;
 }
 
 .user-block {
@@ -361,7 +374,6 @@ input[type="radio"]:checked + label::after {
   height: 16px;
   left: 20px;
   opacity: 0.3;
-  filter: alpha(opacity=);
   position: absolute;
   top: 28px;
   width: 18px;
@@ -376,6 +388,7 @@ input[type="radio"]:checked + label::after {
    ========================================================================== */
 .main-footer {
   background: #252525 url("../img/dark-pattern-bg.jpg");
+  box-shadow: inset 0px 30px 40px -15px #000;
   color: #fff;
   margin-top: 65px;
   padding-bottom: 40px;
@@ -415,7 +428,7 @@ input[type="radio"]:checked + label::after {
   margin: 0 2px;
   position: relative;
   text-decoration: none;
-  transition: background-color 0.5s;
+  transition: background 0.5s;
   vertical-align: top;
   width: 43px;
 }
@@ -697,6 +710,13 @@ input[type="radio"]:checked + label::after {
   margin-bottom: 0;
 }
 
+.inner-content h2 {
+  font-size: 24px;
+  line-height: 1.25;
+  margin-bottom: 30px;
+  margin-top: 60px;
+}
+
 .big-heading {
   margin-bottom: 65px;
   margin-top: 55px;
@@ -712,21 +732,28 @@ input[type="radio"]:checked + label::after {
   z-index: 1;
 }
 
-.big-heading b {
-  background: #f8f3f0 url("../img/light-pattern-bg.jpg") repeat;
+.big-heading h2 {
+  background: #f8f3f0 url("../img/light-pattern-bg.jpg");
+  display: inline-block;
   font-size: 48px;
   line-height: 1;
+  margin: 0;
   padding: 0 25px;
   position: relative;
   text-align: center;
+  vertical-align: middle;
   z-index: 2;
 }
 
-.inner-content h2 {
-  font-size: 24px;
-  line-height: 1.25;
+.inner-content h3 {
+  font-size: 20px;
+  line-height: 1.2;
   margin-bottom: 30px;
   margin-top: 60px;
+}
+
+.inner-content h2 + h3 {
+  margin-top: 30px;
 }
 
 .inner-content p {
