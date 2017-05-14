@@ -638,7 +638,8 @@ input[type="radio"]:checked + label::after {
 }
 
 .appointment-form input:focus {
-  border: 2px solid #663d15;
+  border-color: #663d15;
+  outline: none;
 }
 
 .appointment-form input:nth-child(2n) {
@@ -1012,4 +1013,157 @@ input[type="radio"]:checked + label::after {
 
 .product-info .product-price {
   margin-bottom: 65px;
+}
+
+/* ==========================================================================
+   Modals
+   ========================================================================== */
+.modal-content {
+  background: #f8f3f0 url("../img/light-pattern-bg.jpg");
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+  color: #000;
+  display: none;
+  left: 50%;
+  margin-left: -230px;
+  padding: 50px 80px;
+  position: absolute;
+  top: 120px;
+  width: 460px;
+}
+
+.modal-content-map {
+  background: #e9e5dc url("../img/map-img.jpg");
+  border: 7px solid #fff;
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+  display: none;
+  height: 561px;
+  left: 50%;
+  margin-left: -390px;
+  margin-top: -280px;
+  position: fixed;
+  top: 50%;
+  width: 766px;
+  z-index: 20;
+}
+
+.modal-overlay {
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.modal-content-close {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  font-size: 0;
+  height: 22px;
+  position: absolute;
+  right: -34px;
+  top: 0;
+  width: 22px;
+}
+
+.modal-content-close::before,
+.modal-content-close::after {
+  background-color: #d0d0d0;
+  border-radius: 1px;
+  content: "";
+  height: 3px;
+  left: 2px;
+  position: absolute;
+  top: 10px;
+  width: 19px;
+}
+
+.modal-content-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-content-close::after {
+  transform: rotate(-45deg);
+}
+
+.modal-content h2 {
+  font-size: 30px;
+  line-height: 1.4;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.modal-content p {
+  margin: 0;
+  margin-bottom: 14px;
+}
+
+.login-user,
+.login-password {
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.login-user input,
+.login-password input {
+  background-color: #f9f6f3;
+  border: 2px solid #000;
+  color: #000;
+  font-family: "PT Sans Narrow", Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.71428571;
+  padding-right: 40px;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  width: 300px;
+}
+
+.login-form input:focus {
+  border-color: #663d15;
+  outline: none;
+}
+
+.login-user::after,
+.login-password::after {
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  content: "";
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.login-user::after {
+  background-position: -92px -31px;
+  height: 15px;
+  width: 15px;
+}
+
+.login-password::after {
+  background-position: -67px -37px;
+  height: 17px;
+  width: 15px;
+}
+
+.login-remember {
+  display: inline;
+}
+
+.login-remember:hover {
+  color: #663d15;
+}
+
+.login-restore {
+  color: #000;
+  float: right;
+}
+
+.btn-login {
+  margin-top: 15px;
+  width: 100%;
 }
