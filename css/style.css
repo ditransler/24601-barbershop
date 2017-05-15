@@ -270,7 +270,7 @@ input[type="radio"]:checked + label::after {
 .main-header {
   background-color: #000;
   color: #fff;
-  margin-bottom: 60px;
+  margin-bottom: 62px;
 }
 
 .inner-page .main-header {
@@ -357,8 +357,8 @@ input[type="radio"]:checked + label::after {
   display: inline-block;
   font-size: 16px;
   line-height: 1.25;
-  padding: 25px 20px;
-  padding-left: 50px;
+  padding: 25px 23px;
+  padding-left: 51px;
   position: relative;
   text-decoration: none;
   vertical-align: top;
@@ -392,12 +392,12 @@ input[type="radio"]:checked + label::after {
   color: #fff;
   margin-top: 65px;
   padding-bottom: 40px;
-  padding-top: 60px;
+  padding-top: 57px;
 }
 
 .footer-contacts {
   float: left;
-  margin-right: 60px;
+  margin-right: 62px;
   width: 320px;
 }
 
@@ -495,6 +495,9 @@ input[type="radio"]:checked + label::after {
 
 .footer-copyright .btn {
   margin-right: 0;
+  min-width: 140px;
+  padding-left: 23px;
+  padding-right: 23px;
 }
 
 .footer-copyright .btn:hover {
@@ -508,7 +511,8 @@ input[type="radio"]:checked + label::after {
 .index-logo {
   height: 204px;
   margin: 0 auto;
-  margin-bottom: 25px;
+  margin-bottom: 21px;
+  padding-left: 5px;
   width: 368px;
 }
 
@@ -518,14 +522,14 @@ input[type="radio"]:checked + label::after {
 }
 
 .features {
-  margin-bottom: 80px;
+  margin-bottom: 77px;
 }
 
 .features-item {
   float: left;
-  margin-right: 20px;
+  margin-right: 23px;
   text-align: center;
-  width: 300px;
+  width: 298px;
 }
 
 .features-item:last-child {
@@ -536,8 +540,8 @@ input[type="radio"]:checked + label::after {
   display: block;
   font-size: 30px;
   line-height: 1.4;
-  margin-bottom: 30px;
-  padding-bottom: 35px;
+  margin-bottom: 29px;
+  padding-bottom: 31px;
   position: relative;
 }
 
@@ -555,8 +559,7 @@ input[type="radio"]:checked + label::after {
 }
 
 .features-item p {
-  margin: 10px;
-  margin-bottom: 0;
+  margin: 0;
 }
 
 .index-content {
@@ -564,7 +567,7 @@ input[type="radio"]:checked + label::after {
               #f8f5f2 url("../img/light-pattern-bg.jpg");
   color: #000;
   margin-bottom: 35px;
-  padding: 50px 80px;
+  padding: 45px 80px 50px;
 }
 
 .index-content-left {
@@ -581,16 +584,17 @@ input[type="radio"]:checked + label::after {
   font-size: 30px;
   line-height: 1.4;
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .index-content p {
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 21px;
 }
 
 .gallery {
   height: 260px;
+  margin-top: 22px;
   position: relative;
 }
 
@@ -621,6 +625,10 @@ input[type="radio"]:checked + label::after {
   right: 0;
 }
 
+.appointment-form {
+  margin-top: 22px;
+}
+
 .appointment-form input {
   background-color: #f9f6f3;
   border: 2px solid #000;
@@ -632,7 +640,7 @@ input[type="radio"]:checked + label::after {
   line-height: 1.71428571;
   margin-right: 20px;
   margin-bottom: 20px;
-  padding: 7px 15px;
+  padding: 8px 15px 7px;
   text-transform: uppercase;
   width: 140px;
 }
@@ -654,12 +662,13 @@ input[type="radio"]:checked + label::after {
 .news-preview {
   list-style: none;
   margin: 0;
+  margin-bottom: 29px;
   padding: 0;
   padding-right: 35px;
 }
 
 .news-preview li {
-  margin-bottom: 25px;
+  margin-bottom: 21px;
 }
 
 .news-preview p {
@@ -668,6 +677,21 @@ input[type="radio"]:checked + label::after {
 
 .news-preview time {
   text-transform: none;
+}
+
+.index-content-left .btn-all-news {
+  min-width: 140px;
+}
+
+.index-content-left .btn-map {
+  margin-right: 17px;
+  padding-left: 31px;
+  padding-right: 31px;
+}
+
+.index-content-left .btn-feedback {
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 /* ==========================================================================
