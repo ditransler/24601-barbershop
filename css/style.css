@@ -224,7 +224,7 @@ input[type="radio"]:checked + label::after {
 }
 
 .breadcrumbs {
-  margin-bottom: 55px;
+  margin-bottom: 50px;
 }
 
 .breadcrumbs ul {
@@ -245,7 +245,7 @@ input[type="radio"]:checked + label::after {
   content: "";
   height: 8px;
   position: absolute;
-  right: 15px;
+  right: 18px;
   top: 6px;
   transform: rotate(45deg);
   width: 8px;
@@ -270,11 +270,11 @@ input[type="radio"]:checked + label::after {
 .main-header {
   background-color: #000;
   color: #fff;
-  margin-bottom: 62px;
+  margin-bottom: 60px;
 }
 
 .inner-page .main-header {
-  margin-bottom: 55px;
+  margin-bottom: 49px;
 }
 
 .inner-logo img {
@@ -286,7 +286,6 @@ input[type="radio"]:checked + label::after {
 .main-navigation {
   float: left;
   font-size: 0;
-  min-height: 70px;
   width: 780px;
 }
 
@@ -342,7 +341,7 @@ input[type="radio"]:checked + label::after {
 .main-navigation a {
   color: #fff;
   display: block;
-  padding: 25px 20px;
+  padding: 25px 20px 27px;
   text-decoration: none;
 }
 
@@ -393,6 +392,10 @@ input[type="radio"]:checked + label::after {
   margin-top: 65px;
   padding-bottom: 40px;
   padding-top: 57px;
+}
+
+.inner-page .main-footer {
+  margin-top: 49px;
 }
 
 .footer-contacts {
@@ -701,7 +704,7 @@ input[type="radio"]:checked + label::after {
   font-size: 30px;
   line-height: 1.4;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .inner-content {
@@ -851,15 +854,23 @@ input[type="radio"]:checked + label::after {
 .catalog-filters fieldset {
   border: none;
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 52px;
   padding: 0;
+}
+
+.catalog-filters .products-groups {
+  margin-bottom: 50px;
 }
 
 .catalog-filters legend {
   font-size: 24px;
-  line-height: 1.25;
-  margin-bottom: 16px;
+  line-height: 1;
+  margin-bottom: 27px;
   text-transform: uppercase;
+}
+
+.products-groups legend {
+  margin-bottom: 31px;
 }
 
 .catalog-filters ul {
@@ -869,11 +880,18 @@ input[type="radio"]:checked + label::after {
 }
 
 .catalog-filters li:not(:last-child) {
-  margin-bottom: 17px;
+  margin-bottom: 13px;
+}
+
+.catalog-filters .btn {
+  min-width: 112px;
+  padding-left: 29px;
+  padding-right: 29px;
 }
 
 .catalog-items {
   float: right;
+  padding-top: 3px;
   width: 700px;
 }
 
@@ -897,7 +915,7 @@ input[type="radio"]:checked + label::after {
 .product-thumb {
   display: block;
   height: 165px;
-  margin-bottom: 16px;
+  margin-bottom: 13px;
   overflow: hidden;
   width: 220px;
 }
@@ -912,7 +930,7 @@ input[type="radio"]:checked + label::after {
   font-size: 14px;
   line-height: 1.28571429;
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 13px;
   padding: 0 16px;
 }
 
