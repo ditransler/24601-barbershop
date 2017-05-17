@@ -1,6 +1,6 @@
-/*! The main stylesheet for the Barbershop project */
-
 @charset "UTF-8";
+
+/*! The main stylesheet for the Barbershop project */
 
 @font-face {
   font-family: "PT Sans Narrow";
@@ -224,7 +224,7 @@ input[type="radio"]:checked + label::after {
 }
 
 .breadcrumbs {
-  margin-bottom: 55px;
+  margin-bottom: 50px;
 }
 
 .breadcrumbs ul {
@@ -240,12 +240,12 @@ input[type="radio"]:checked + label::after {
   position: relative;
 }
 
-.breadcrumbs li:after {
+.breadcrumbs li::after {
   background: #000;
   content: "";
   height: 8px;
   position: absolute;
-  right: 15px;
+  right: 18px;
   top: 6px;
   transform: rotate(45deg);
   width: 8px;
@@ -274,15 +274,11 @@ input[type="radio"]:checked + label::after {
 }
 
 .inner-page .main-header {
-  margin-bottom: 55px;
-}
-
-.inner-logo {
-  height: 24px;
-  width: 130px;
+  margin-bottom: 49px;
 }
 
 .inner-logo img {
+  display: block;
   height: 24px;
   width: 111px;
 }
@@ -290,15 +286,13 @@ input[type="radio"]:checked + label::after {
 .main-navigation {
   float: left;
   font-size: 0;
-  min-height: 70px;
   width: 780px;
 }
 
 .main-navigation .inner-logo {
   display: inline-block;
-  padding: 0;
-  padding-left: 10px;
-  padding-right: 19px;
+  padding-bottom: 23px;
+  padding-top: 23px;
   vertical-align: middle;
 }
 
@@ -322,15 +316,33 @@ input[type="radio"]:checked + label::after {
   vertical-align: top;
 }
 
+.main-navigation li:hover {
+  background-color: #242424;
+}
+
+.main-navigation .is-active:hover {
+  background: none;
+}
+
+.main-navigation .is-active {
+  position: relative;
+}
+
+.main-navigation .is-active::after {
+  background-color: #fff;
+  bottom: 0;
+  content: "";
+  height: 5px;
+  left: 20px;
+  position: absolute;
+  right: 20px;
+}
+
 .main-navigation a {
   color: #fff;
   display: block;
-  padding: 25px 20px;
+  padding: 25px 20px 27px;
   text-decoration: none;
-}
-
-.main-navigation a:hover {
-  background: #242424;
 }
 
 .user-block {
@@ -344,8 +356,8 @@ input[type="radio"]:checked + label::after {
   display: inline-block;
   font-size: 16px;
   line-height: 1.25;
-  padding: 25px 20px;
-  padding-left: 50px;
+  padding: 25px 23px;
+  padding-left: 51px;
   position: relative;
   text-decoration: none;
   vertical-align: top;
@@ -361,7 +373,6 @@ input[type="radio"]:checked + label::after {
   height: 16px;
   left: 20px;
   opacity: 0.3;
-  filter: alpha(opacity=);
   position: absolute;
   top: 28px;
   width: 18px;
@@ -376,15 +387,20 @@ input[type="radio"]:checked + label::after {
    ========================================================================== */
 .main-footer {
   background: #252525 url("../img/dark-pattern-bg.jpg");
+  box-shadow: inset 0px 30px 40px -15px #000;
   color: #fff;
   margin-top: 65px;
   padding-bottom: 40px;
-  padding-top: 60px;
+  padding-top: 57px;
+}
+
+.inner-page .main-footer {
+  margin-top: 49px;
 }
 
 .footer-contacts {
   float: left;
-  margin-right: 60px;
+  margin-right: 62px;
   width: 320px;
 }
 
@@ -415,7 +431,7 @@ input[type="radio"]:checked + label::after {
   margin: 0 2px;
   position: relative;
   text-decoration: none;
-  transition: background-color 0.5s;
+  transition: background 0.5s;
   vertical-align: top;
   width: 43px;
 }
@@ -482,6 +498,9 @@ input[type="radio"]:checked + label::after {
 
 .footer-copyright .btn {
   margin-right: 0;
+  min-width: 140px;
+  padding-left: 23px;
+  padding-right: 23px;
 }
 
 .footer-copyright .btn:hover {
@@ -495,7 +514,8 @@ input[type="radio"]:checked + label::after {
 .index-logo {
   height: 204px;
   margin: 0 auto;
-  margin-bottom: 25px;
+  margin-bottom: 21px;
+  padding-left: 5px;
   width: 368px;
 }
 
@@ -505,14 +525,14 @@ input[type="radio"]:checked + label::after {
 }
 
 .features {
-  margin-bottom: 80px;
+  margin-bottom: 77px;
 }
 
 .features-item {
   float: left;
-  margin-right: 20px;
+  margin-right: 23px;
   text-align: center;
-  width: 300px;
+  width: 298px;
 }
 
 .features-item:last-child {
@@ -523,8 +543,8 @@ input[type="radio"]:checked + label::after {
   display: block;
   font-size: 30px;
   line-height: 1.4;
-  margin-bottom: 30px;
-  padding-bottom: 35px;
+  margin-bottom: 29px;
+  padding-bottom: 31px;
   position: relative;
 }
 
@@ -542,8 +562,7 @@ input[type="radio"]:checked + label::after {
 }
 
 .features-item p {
-  margin: 10px;
-  margin-bottom: 0;
+  margin: 0;
 }
 
 .index-content {
@@ -551,7 +570,7 @@ input[type="radio"]:checked + label::after {
               #f8f5f2 url("../img/light-pattern-bg.jpg");
   color: #000;
   margin-bottom: 35px;
-  padding: 50px 80px;
+  padding: 45px 80px 50px;
 }
 
 .index-content-left {
@@ -568,16 +587,17 @@ input[type="radio"]:checked + label::after {
   font-size: 30px;
   line-height: 1.4;
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .index-content p {
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 21px;
 }
 
 .gallery {
   height: 260px;
+  margin-top: 22px;
   position: relative;
 }
 
@@ -608,6 +628,10 @@ input[type="radio"]:checked + label::after {
   right: 0;
 }
 
+.appointment-form {
+  margin-top: 22px;
+}
+
 .appointment-form input {
   background-color: #f9f6f3;
   border: 2px solid #000;
@@ -619,13 +643,14 @@ input[type="radio"]:checked + label::after {
   line-height: 1.71428571;
   margin-right: 20px;
   margin-bottom: 20px;
-  padding: 7px 15px;
+  padding: 8px 15px 7px;
   text-transform: uppercase;
   width: 140px;
 }
 
 .appointment-form input:focus {
-  border: 2px solid #663d15;
+  border-color: #663d15;
+  outline: none;
 }
 
 .appointment-form input:nth-child(2n) {
@@ -640,12 +665,13 @@ input[type="radio"]:checked + label::after {
 .news-preview {
   list-style: none;
   margin: 0;
+  margin-bottom: 29px;
   padding: 0;
   padding-right: 35px;
 }
 
 .news-preview li {
-  margin-bottom: 25px;
+  margin-bottom: 21px;
 }
 
 .news-preview p {
@@ -656,6 +682,21 @@ input[type="radio"]:checked + label::after {
   text-transform: none;
 }
 
+.index-content-left .btn-all-news {
+  min-width: 140px;
+}
+
+.index-content-left .btn-map {
+  margin-right: 17px;
+  padding-left: 31px;
+  padding-right: 31px;
+}
+
+.index-content-left .btn-feedback {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
 /* ==========================================================================
    Price page
    ========================================================================== */
@@ -663,11 +704,15 @@ input[type="radio"]:checked + label::after {
   font-size: 30px;
   line-height: 1.4;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .inner-content {
   margin-bottom: 75px;
+}
+
+.inner-content-columns > *:first-child {
+  margin-top: 0;
 }
 
 .inner-content-colums + .inner-content-columns {
@@ -697,9 +742,16 @@ input[type="radio"]:checked + label::after {
   margin-bottom: 0;
 }
 
+.inner-content h2 {
+  font-size: 24px;
+  line-height: 1.25;
+  margin-bottom: 28px;
+  margin-top: 60px;
+}
+
 .big-heading {
-  margin-bottom: 65px;
-  margin-top: 55px;
+  margin-bottom: 59px;
+  margin-top: 50px;
   text-align: center;
 }
 
@@ -712,21 +764,28 @@ input[type="radio"]:checked + label::after {
   z-index: 1;
 }
 
-.big-heading b {
-  background: #f8f3f0 url("../img/light-pattern-bg.jpg") repeat;
+.big-heading h2 {
+  background: #f8f3f0 url("../img/light-pattern-bg.jpg");
+  display: inline-block;
   font-size: 48px;
   line-height: 1;
+  margin: 0;
   padding: 0 25px;
   position: relative;
   text-align: center;
+  vertical-align: middle;
   z-index: 2;
 }
 
-.inner-content h2 {
-  font-size: 24px;
-  line-height: 1.25;
+.inner-content h3 {
+  font-size: 20px;
+  line-height: 1.2;
   margin-bottom: 30px;
   margin-top: 60px;
+}
+
+.inner-content h2 + h3 {
+  margin-top: 30px;
 }
 
 .inner-content p {
@@ -739,7 +798,7 @@ input[type="radio"]:checked + label::after {
 
 .inner-content td {
   border: 2px solid #000;
-  padding: 10px 15px;
+  padding: 8px 15px;
 }
 
 .custom-list {
@@ -753,12 +812,8 @@ input[type="radio"]:checked + label::after {
   position: relative;
 }
 
-.custome-list-1 li {
-  margin-bottom: 15px;
-}
-
-.custome-list-2 li {
-  margin-bottom: 2px;
+.custom-list-1 li {
+  margin-bottom: 12px;
 }
 
 .custom-list li::before {
@@ -785,7 +840,7 @@ input[type="radio"]:checked + label::after {
 }
 
 .short-text {
-  padding-right: 80px;
+  padding-right: 75px;
 }
 
 /* ==========================================================================
@@ -799,15 +854,23 @@ input[type="radio"]:checked + label::after {
 .catalog-filters fieldset {
   border: none;
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 52px;
   padding: 0;
+}
+
+.catalog-filters .products-groups {
+  margin-bottom: 50px;
 }
 
 .catalog-filters legend {
   font-size: 24px;
-  line-height: 1.25;
-  margin-bottom: 16px;
+  line-height: 1;
+  margin-bottom: 27px;
   text-transform: uppercase;
+}
+
+.products-groups legend {
+  margin-bottom: 31px;
 }
 
 .catalog-filters ul {
@@ -817,11 +880,18 @@ input[type="radio"]:checked + label::after {
 }
 
 .catalog-filters li:not(:last-child) {
-  margin-bottom: 17px;
+  margin-bottom: 13px;
+}
+
+.catalog-filters .btn {
+  min-width: 112px;
+  padding-left: 29px;
+  padding-right: 29px;
 }
 
 .catalog-items {
   float: right;
+  padding-top: 3px;
   width: 700px;
 }
 
@@ -845,7 +915,7 @@ input[type="radio"]:checked + label::after {
 .product-thumb {
   display: block;
   height: 165px;
-  margin-bottom: 16px;
+  margin-bottom: 13px;
   overflow: hidden;
   width: 220px;
 }
@@ -860,7 +930,7 @@ input[type="radio"]:checked + label::after {
   font-size: 14px;
   line-height: 1.28571429;
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 13px;
   padding: 0 16px;
 }
 
@@ -938,6 +1008,14 @@ input[type="radio"]:checked + label::after {
 /* ==========================================================================
    Item page
    ========================================================================== */
+.product-content {
+  margin-bottom: 50px;
+}
+
+.product-showcase {
+  padding-top: 4px;
+}
+
 .product-showcase .large-image {
   box-shadow: 0 0 15px 0 rgba(0, 1, 1, 0.2);
   height: 498px;
@@ -959,10 +1037,12 @@ input[type="radio"]:checked + label::after {
 
 .product-info {
   padding-left: 70px;
+  padding-top: 23px;
 }
 
 .product-extra {
-  margin-bottom: 40px;
+  margin-bottom: 29px;
+  max-width: 380px;
 }
 
 .product-extra .product-availability,
@@ -980,9 +1060,166 @@ input[type="radio"]:checked + label::after {
 }
 
 .product-description {
-  margin-bottom: 40px;
+  margin-bottom: 36px;
 }
 
 .product-info .product-price {
-  margin-bottom: 65px;
+  margin-bottom: 62px;
+}
+
+.product-features h2 {
+  margin-bottom: 27px;
+}
+
+/* ==========================================================================
+   Modals
+   ========================================================================== */
+.modal-content {
+  background: #f8f3f0 url("../img/light-pattern-bg.jpg");
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+  color: #000;
+  display: none;
+  left: 50%;
+  margin-left: -230px;
+  padding: 50px 80px;
+  position: absolute;
+  top: 120px;
+  width: 460px;
+}
+
+.modal-content-map {
+  background: #e9e5dc url("../img/map-img.jpg");
+  border: 7px solid #fff;
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+  display: none;
+  height: 561px;
+  left: 50%;
+  margin-left: -390px;
+  margin-top: -280px;
+  position: fixed;
+  top: 50%;
+  width: 766px;
+  z-index: 20;
+}
+
+.modal-overlay {
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.modal-content-close {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  font-size: 0;
+  height: 22px;
+  position: absolute;
+  right: -34px;
+  top: 0;
+  width: 22px;
+}
+
+.modal-content-close::before,
+.modal-content-close::after {
+  background-color: #d0d0d0;
+  border-radius: 1px;
+  content: "";
+  height: 3px;
+  left: 2px;
+  position: absolute;
+  top: 10px;
+  width: 19px;
+}
+
+.modal-content-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-content-close::after {
+  transform: rotate(-45deg);
+}
+
+.modal-content h2 {
+  font-size: 30px;
+  line-height: 1.4;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.modal-content p {
+  margin: 0;
+  margin-bottom: 14px;
+}
+
+.login-user,
+.login-password {
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.login-user input,
+.login-password input {
+  background-color: #f9f6f3;
+  border: 2px solid #000;
+  color: #000;
+  font-family: "PT Sans Narrow", Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.71428571;
+  padding-right: 40px;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  width: 300px;
+}
+
+.login-form input:focus {
+  border-color: #663d15;
+  outline: none;
+}
+
+.login-user::after,
+.login-password::after {
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  content: "";
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.login-user::after {
+  background-position: -92px -31px;
+  height: 15px;
+  width: 15px;
+}
+
+.login-password::after {
+  background-position: -67px -37px;
+  height: 17px;
+  width: 15px;
+}
+
+.login-remember {
+  display: inline;
+}
+
+.login-remember:hover {
+  color: #663d15;
+}
+
+.login-restore {
+  color: #000;
+  float: right;
+}
+
+.btn-login {
+  margin-top: 15px;
+  width: 100%;
 }
