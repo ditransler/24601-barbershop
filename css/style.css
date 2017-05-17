@@ -1008,6 +1008,14 @@ input[type="radio"]:checked + label::after {
 /* ==========================================================================
    Item page
    ========================================================================== */
+.product-content {
+  margin-bottom: 50px;
+}
+
+.product-showcase {
+  padding-top: 4px;
+}
+
 .product-showcase .large-image {
   box-shadow: 0 0 15px 0 rgba(0, 1, 1, 0.2);
   height: 498px;
@@ -1029,10 +1037,12 @@ input[type="radio"]:checked + label::after {
 
 .product-info {
   padding-left: 70px;
+  padding-top: 23px;
 }
 
 .product-extra {
-  margin-bottom: 40px;
+  margin-bottom: 29px;
+  max-width: 380px;
 }
 
 .product-extra .product-availability,
@@ -1050,11 +1060,15 @@ input[type="radio"]:checked + label::after {
 }
 
 .product-description {
-  margin-bottom: 40px;
+  margin-bottom: 36px;
 }
 
 .product-info .product-price {
-  margin-bottom: 65px;
+  margin-bottom: 62px;
+}
+
+.product-features h2 {
+  margin-bottom: 27px;
 }
 
 /* ==========================================================================
