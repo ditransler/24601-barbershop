@@ -111,5 +111,33 @@
         </section>
       </div>
     </footer>
+    <!-- Modals
+      ---------------------------------------------------------->
+      <div class="modal-overlay"></div>
+      <div class="modal-content">
+        <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+        <h2 class="modal-content-title">Личный кабинет</h2>
+        <p>Введите свой логин и пароль.</p>
+        <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+          <div class="login-user">
+            <input class="icon-user" type="text" name="login" placeholder="Логин">
+          </div>
+          <div class="login-password">
+            <input class="icon-password" type="password"  name="password" placeholder="Пароль">
+          </div>
+          <div class="login-remember">
+            <input id="login-remember" type="checkbox" name="remember" value="1">
+            <label for="login-remember">Запомните меня</label>
+          </div>
+          <a class="login-restore" href="#" title="Перейти к восстановлению пароля">Я забыл пароль!</a>
+          <button class="btn btn-login" type="submit">Войти</button>
+      </div>
+      <div class="modal-content-map">
+        <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+        <div id="yandex-map"></div>
+      </div>
+      <!-- JS
+        ---------------------------------------------------------->
+      <script src="js/script.js"></script>
   </body>
 </html>
