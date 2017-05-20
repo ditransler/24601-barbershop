@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="no-js" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>Прайс-лист - Барбершоп</title>
@@ -32,7 +32,7 @@
           </ul>
         </nav>
         <div class="user-block">
-          <a class="login" href="#" title="Вход">Вход</a>
+          <a class="login" href="login.html" title="Вход">Вход</a>
         </div>
       </div>
     </header>
@@ -117,7 +117,7 @@
       <div class="modal-content">
         <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
         <h2 class="modal-content-title">Личный кабинет</h2>
-        <p>Введите свой логин и пароль.</p>
+        <p>Введите пожалуйста свой логин и пароль.</p>
         <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
           <div class="login-user">
             <input class="icon-user" type="text" name="login" placeholder="Логин">
@@ -131,13 +131,14 @@
           </div>
           <a class="login-restore" href="#" title="Перейти к восстановлению пароля">Я забыл пароль!</a>
           <button class="btn btn-login" type="submit">Войти</button>
-      </div>
-      <div class="modal-content-map">
-        <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
-        <div id="yandex-map"></div>
+        </form>
       </div>
       <!-- JS
         ---------------------------------------------------------->
+      <script>
+        // A check whether JS is on/off
+        (function(){var html=document.documentElement;html.className=html.className.replace('no-js','js');})();
+      </script>
       <script src="js/script.js"></script>
   </body>
 </html>

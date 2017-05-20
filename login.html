@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Вход - Барбершоп</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body class="inner-page">
+    <header class="main-header">
+      <div class="container clearfix">
+        <nav class="main-navigation">
+          <a class="inner-logo" href="index.html" title="На главную">
+            <img src="img/inner-logo.png" width="111" height="24" alt="Барбершоп &laquo;Бородинский&raquo;">
+          </a>
+          <ul>
+            <li>
+              <a href="#" title="Информация">Информация</a>
+            </li>
+            <li>
+              <a href="#" title="Новости">Новости</a>
+            </li>
+            <li>
+              <a href="price.html" title="Прайс-лист">Прайс-лист</a>
+            </li>
+            <li>
+              <a href="shop.html" title="Магазин">Магазин</a>
+            </li>
+            <li>
+              <a href="#" title="Контакты">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="user-block">
+          <a class="login" href="login.html" title="Вход">Вход</a>
+        </div>
+      </div>
+    </header>
+    <main class="main-content container">
+      <h1 class="main-heading">Вход в личный кабинет</h1>
+      <nav class="breadcrumbs">
+        <ul>
+          <li>
+            <a href="index.html" title="Главная">Главная</a>
+          </li>
+          <li>
+            Вход в личный кабинет
+          </li>
+        </ul>
+      </nav>
+      <div class="inner-content">
+        <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+          <p>Введите пожалуйста свой логин и пароль.</p>
+          <div class="login-user">
+            <input class="icon-user" type="text" name="login" placeholder="Логин">
+          </div>
+          <div class="login-password">
+            <input class="icon-password" type="password"  name="password" placeholder="Пароль">
+          </div>
+          <div class="login-remember">
+            <input id="login-remember" type="checkbox" name="remember" value="1">
+            <label for="login-remember">Запомните меня</label>
+          </div>
+          <a class="login-restore" href="#" title="Перейти к восстановлению пароля">Я забыл пароль!</a>
+          <button class="btn btn-login" type="submit">Войти</button>
+        </form>
+      </div>
+    </main>
+    <footer class="main-footer">
+      <div class="container clearfix">
+        <section class="footer-contacts">
+          Барбершоп «Бородинский»<br>
+          Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+          <a href="#" title="Как нас найти">Как нас найти?</a><br>
+          Телефон: +7 (495) 666-02-66
+        </section>
+        <section class="footer-social">
+          <p>Давайте дружить!</p>
+          <a class="social-btn social-btn-vk" href="#" title="ВКонтакте">Вконтакте</a>
+          <a class="social-btn social-btn-fb" href="#" title="Фейсбук">Фейсбук</a>
+          <a class="social-btn social-btn-inst" href="#" title="Инстаграм">Инстаграм</a>
+        </section>
+        <section class="footer-copyright">
+          <p>Разработано:</p>
+          <a class="btn" href="https://htmlacademy.ru" title="HTML Academy">HTMLAcademy.ru</a>
+        </section>
+      </div>
+    </footer>
+    <!-- JS
+      ---------------------------------------------------------->
+    <script>
+      // A check whether JS is on/off
+      (function(){var html=document.documentElement;html.className=html.className.replace('no-js','js');})();
+    </script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

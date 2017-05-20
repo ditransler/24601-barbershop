@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="no-js" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Барбершоп</title>
@@ -29,7 +29,7 @@
           </ul>
         </nav>
         <div class="user-block">
-          <a class="login" href="#" title="Вход">Вход</a>
+          <a class="login" href="login.html" title="Вход">Вход</a>
         </div>
       </div>
     </header>
@@ -90,7 +90,7 @@
             пн — пт: с 10:00 до 22:00<br>
             сб — вс: с 10:00 до 19:00
           </p>
-          <a class="btn btn-map js-open-map" href="#" title="Как проехать">Как проехать</a>
+          <a class="btn btn-map js-open-map" href="contacts.html" title="Как проехать">Как проехать</a>
           <a class="btn btn-feedback" href="#" title="Обратная связь">Обратная связь</a>
         </div>
         <div class="index-content-right">
@@ -132,7 +132,7 @@
       <div class="modal-content">
         <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
         <h2 class="modal-content-title">Личный кабинет</h2>
-        <p>Введите свой логин и пароль.</p>
+        <p>Введите пожалуйста свой логин и пароль.</p>
         <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
           <div class="login-user">
             <input class="icon-user" type="text" name="login" placeholder="Логин">
@@ -146,13 +146,18 @@
           </div>
           <a class="login-restore" href="#" title="Перейти к восстановлению пароля">Я забыл пароль!</a>
           <button class="btn btn-login" type="submit">Войти</button>
+        </form>
       </div>
       <div class="modal-content-map">
         <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426&" width="752" height="547" frameborder="0" style="border:0;" allowfullscreen></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426&" width="752" height="547" style="border:0;" allowfullscreen></iframe>
       </div>
       <!-- JS
         ---------------------------------------------------------->
+      <script>
+        // A check whether JS is on/off
+        (function(){var html=document.documentElement;html.className=html.className.replace('no-js','js');})();
+      </script>
       <script src="js/script.js"></script>
   </body>
 </html>
