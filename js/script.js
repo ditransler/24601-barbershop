@@ -8,7 +8,7 @@
       login = popup.querySelector('[name=login]'),
       password = popup.querySelector('[name=password]'),
       storage = localStorage.getItem('login'),
-      mapOpen = d.querySelector('.js-open-map'),
+      mapOpen = d.querySelectorAll('.js-open-map'),
       mapPopup = d.querySelector('.modal-content-map'),
       mapClose = mapPopup.querySelector('.modal-content-close');
 
@@ -54,11 +54,15 @@
     }
   });
 
-  mapOpen.addEventListener('click', function(evt) {
-    evt.preventDefault();
-    overlay.classList.add('modal-overlay-show');
-    mapPopup.classList.add('modal-content-show');
-  });
+  (function () {
+    for (var i = 0; i < mapOpen.length; i++) {
+        mapOpen[i].addEventListener('click', function(evt) {
+          evt.preventDefault();
+          overlay.classList.add('modal-overlay-show');
+          mapPopup.classList.add('modal-content-show');
+        });
+    }
+  })();
 
   mapClose.addEventListener('click', function(evt) {
     evt.preventDefault();
